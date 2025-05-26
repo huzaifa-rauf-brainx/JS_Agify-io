@@ -1,0 +1,8 @@
+1. Sarah in Denmark is 37 years old -- CountryCode: DK
+2. Victor in Denmark is 47 years old -- CountryCode: DK
+3. Michael in United States is 57 years old -- CountryCode: US
+4. Huzaifa in United States is 40 years old -- CountryCode: US
+5. saad in United States is 45 years old -- CountryCode: US
+6. daniyal in United States is 29 years old -- CountryCode: US
+7. Sofia in United States is 42 years old -- CountryCode: US
+8. huzaifa in Afghanistan is unknown to us -- CountryCode: AF

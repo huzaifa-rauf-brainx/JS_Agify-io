@@ -10,10 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         const response = await fetch(`https://api.agify.io?name=${name}&country_id=${countryCode}`);
         const data = await response.json();
-        if (data.age > 18) {
-            showToast(`Access granted. Predicted age: ${data.age}`, "success");
+        if (data.age === null) {
+            showToast(`Access denied. ${name} is unknown`, "danger");
         } else {
-            showToast(`Access denied. Predicted age: ${data.age}`, "danger");
+            if (data.age > 18) {
+                showToast(`Access granted. Predicted age: ${data.age}`, "success");
+            } else {
+                showToast(`Access denied. Predicted age: ${data.age}`, "danger");
+            }
         }
     });
     function showToast(message, type = "info") {
